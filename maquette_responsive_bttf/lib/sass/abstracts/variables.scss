@@ -1,0 +1,115 @@
+$sxm: 321px;
+$ssm: 760px;
+$smd: 1280px;
+$slg: 1850px;
+
+$breackpoints : (
+    'screen-sxs': 140px,
+    'screen-sx': 321px,
+    'screen-sm': 760px,
+    'screen-md': 1280px,
+    'screen-lg': 1842px
+);
+
+$m_ext: (
+
+    sxs: (
+        1:map-get($breackpoints, 'screen-sxs'),
+        2: 'sxs',
+    ),
+    sx: (
+        1: map-get($breackpoints , 'screen-sx'),
+        2: 'sx',
+    ),
+    sm: (
+        1: map-get($breackpoints , 'screen-sm'),
+        2: 'sm',
+    ),
+    md: (
+        1: map-get($breackpoints, 'screen-md'),
+        2: 'md',
+    ),
+    lg: (
+        1: map-get($breackpoints, 'screen-lg'),
+        2: 'lg',
+    )
+
+);
+
+$c_fonts: (
+    'muted': $muted,
+    'primary': $primary,
+    'secondary': $secondary,
+    'success': $success,
+    'warning': $warning,
+    'error': $error,
+    'white': $white,
+    'light': $light,
+    'info': $info,
+    'danger': $danger,
+    'dark': $dark,
+);
+
+$c_props: (
+
+    primary: (
+        1: 'primary',
+        2: $primary,
+        3: $b_primary,
+        4: $bo_c_primary,
+    ),
+    secondary: (
+        1: 'secondary',
+        2: $secondary,
+        3: $b_secondary,
+        4: $bo_c_secondary,
+    ),
+    success: (
+        1: 'success',
+        2: $success,
+        3: $b_success,
+        4: $bo_c_success,
+    ),
+    warning: (
+        1: 'warning',
+        2: $warning,
+        3: $b_warning,
+        4: $bo_c_warning,
+    ),
+    info: (
+        1: 'info',
+        2: $info,
+        3: $b_info,
+        4: $bo_c_info,
+    ),
+    danger: (
+        1: 'danger',
+        2: $danger,
+        3: $b_danger,
+        4: $bo_c_danger,
+    ),
+    light: (
+        1: 'light',
+        2: $light,
+        3: $b_light,
+        4: $bo_c_light,
+    ),
+    dark: (
+        1:'dark',
+        2: $dark,
+        3: $b_dark,
+        4: $bo_c_dark,
+    ),
+    blue_s: (
+        1: 'blue_s',
+        2: $blue_s,
+        3: $b_blue_s,
+        4: $bo_c_blue_s,
+    ),
+    magenta: (
+        1: 'magenta',
+        2: $magenta,
+        3: $b_magenta,
+        4: $bo_c_magenta,
+    )
+);

@@ -1,0 +1,5 @@
+@each $c_name, $c_font in $c_fonts {
+    .text-#{$c_name} {
+        color: #{$c_font} !important;
+    }
+}

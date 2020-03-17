@@ -1,0 +1,13 @@
+@each $c_name, $props in $c_props {
+    .alert-#{map-get($props, 1)} {
+        color: #{map-get($props, 2)};
+        background-color: #{map-get($props, 3)};
+        border-color: #{map-get($props, 4)};
+    }
+
+    .bg-#{map-get($props, 1)} {
+        background-color: #{map-get($props, 2)};
+    }
+
+
+}

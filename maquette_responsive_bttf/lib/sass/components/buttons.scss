@@ -1,0 +1,35 @@
+@each $c_name, $props in $c_props {
+    .btn-#{map-get($props, 1)} {
+        color: $white;
+        background-color: #{map-get($props, 2)};
+        border-color: #{map-get($props, 2)};
+
+        &:active{
+            border-color: $white;
+        }
+
+        &:hover {
+            color: #{map-get($props, 2)};
+            background-color: $white;
+            border-color: $white;
+            cursor: pointer;
+        }
+    }
+
+    .btn-outline-#{map-get($props, 1)} {
+        color: #{map-get($props, 2)};
+        border-color: #{map-get($props, 2)};
+        background-color: transparent;
+
+        &:active {
+            border-color: #{map-get($props, 2)};
+        }
+
+        &:hover {
+            color: $white;
+            background-color: #{map-get($props, 2)};
+            border-color: #{map-get($props, 2)};
+            cursor: pointer;
+        }
+    }
+}

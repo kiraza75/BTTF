@@ -1,0 +1,15 @@
+.row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+
+@each $c_name, $ext in $m_ext {
+    @media screen and (min-width: #{map-get($ext, 1)}){
+        @for $i from 1 through 12 {
+            .col-#{map-get($ext, 2)}-#{$i} {
+                grid-column: span $i * 1;
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@each $c_name, $ext in $m_ext {
+
+    @media screen and (min-width: #{map-get($ext, 1)}) {
+        .visible-#{map-get($ext, 2)} {
+
+            visibility: visible;
+        }
+        
+        .hidden-#{map-get($ext, 2)} {
+            visibility: hidden;
+        }
+    }
+    @media print and (min-width: #{map-get($ext, 1)}) {
+        .visible-print-#{map-get($ext, 2)} {
+            visibility: visible;
+        }
+
+        .hidden-print-#{map-get($ext, 2)} {
+            visibility: none;
+        }
+    }
+
+}

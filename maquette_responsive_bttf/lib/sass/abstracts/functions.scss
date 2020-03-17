@@ -1,0 +1,10 @@
+@function t_color($prop, $pos: 1) {
+
+    @return map-get(map-get($props, $prop) $pos);
+    
+}
+
+@function get_index($index) {
+     $k : map-keys($m_ext);
+ @return ink($k, $index);
+ }

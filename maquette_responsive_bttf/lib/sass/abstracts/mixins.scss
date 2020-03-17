@@ -1,0 +1,13 @@
+@mixin media_min($key) {
+    @media screen  and (min-width: #{map-get($breackpoints, $key)}){
+        
+            @content;
+    }
+}
+
+@mixin print_device($key) {
+    @media print and (min-width: #{map-get($breackpoints, $key)}) {
+
+        @content;
+    }
+}
